@@ -8,7 +8,7 @@ export default function WeatherBox(props) {
   };
   useEffect(() => {
     async function updateData(){
-        const url = `http://api.weatherstack.com/current?access_key=${props.apiKey}&query=${search}`
+        const url = `//api.weatherstack.com/current?access_key=${props.apiKey}&query=${search}`
         //const url = `//api.weatherstack.com/current?access_key=getyourownkeymate0011&query=${search}`
         const response = await fetch(url)
         const responseJson = await response.json()
