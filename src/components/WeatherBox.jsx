@@ -13,6 +13,7 @@ export default function WeatherBox(props) {
         const response = await fetch(url)
         const responseJson = await response.json()
         setdeets(responseJson)
+        console.log(deets)
     }
     updateData();
   }, [search]);
